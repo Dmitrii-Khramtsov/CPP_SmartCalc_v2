@@ -1,3 +1,24 @@
+// Copyright 2024 Dmitrii Khramtsov
+
+/**
+ * @file polish_notation.cc
+ *
+ * @brief Implementation of the ReversePolishNotation class for the SmartCalc v2.0
+ * library.
+ *
+ * This file contains the implementation of the ReversePolishNotation class,
+ * which is part of the SmartCalc v2.0 library.
+ * The ReversePolishNotation class is responsible for converting infix expressions
+ * to Reverse Polish Notation (RPN), which is used for evaluating mathematical
+ * expressions.
+ *
+ * @author Dmitrii Khramtsov (lonmouth@student.21-school.ru)
+ *
+ * @date 2024-08-15
+ *
+ * @copyright School-21 (c) 2024
+ */
+
 #include "polish_notation.h"
 
 #include <iostream>
