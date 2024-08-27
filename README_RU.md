@@ -1,7 +1,4 @@
-<div style="display: flex; align-items: center;">
-  <img src="materials/images/SmartCalc_v2.ico" alt="Icon" style="height: 24px; vertical-align: middle;">
-  <span style="font-size: 24px; font-weight: bold; margin-left: 10px; line-height: 24px;">SmartCalc v2.0</span>
-</div>
+# <img src="materials/images/SmartCalc_v2.ico" alt="Icon" style="height: 24px; width: 24px; vertical-align: middle;"> SmartCalc v2.0
 
 ## Введение
 
