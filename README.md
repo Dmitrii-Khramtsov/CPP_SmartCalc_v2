@@ -1,5 +1,5 @@
-<div style="display: flex; align-items: flex-end;">
-  <img src="materials/images/SmartCalc_v2.ico" alt="Icon" style="height: 24px; vertical-align: bottom;">
+<div style="display: flex; align-items: center;">
+  <img src="materials/images/SmartCalc_v2.ico" alt="Icon" style="height: 24px; vertical-align: middle;">
   <span style="font-size: 24px; font-weight: bold; margin-left: 10px; line-height: 1;">SmartCalc v2.0</span>
 </div>
 
