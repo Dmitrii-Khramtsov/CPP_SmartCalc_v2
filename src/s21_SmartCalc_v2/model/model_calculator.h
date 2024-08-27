@@ -33,34 +33,40 @@
 
 namespace s21 {
 
-enum TokenType { TYPE_OPERAND, TYPE_BINARY_OPERATOR, TYPE_UNARY_OPERATOR, TYPE_UNKNOWN };
+enum TokenType {
+  TYPE_OPERAND,
+  TYPE_BINARY_OPERATOR,
+  TYPE_UNARY_OPERATOR,
+  TYPE_UNKNOWN
+};
 
 using String = std::string;
 using Vector = std::vector<std::vector<double>>;
 
 class ModelCalculator {
-   public:
-    ModelCalculator() : answer_(0) {};
+ public:
+  ModelCalculator() : answer_(0) {};
 
-    // Main methods:
-    double calculate(const String& expression, const double& x);
-    Vector calculateGraf(std::pair<double, double> xRange, std::pair<double, double> yRange, unsigned pAmount,
-                         std::string infix);
+  // Main methods:
+  double calculate(const String& expression, const double& x);
+  Vector calculateGraf(std::pair<double, double> xRange,
+                       std::pair<double, double> yRange, unsigned pAmount,
+                       std::string infix);
 
-   private:
-    // Auxiliary methods:
-    double evaluateRPN(const String& rpn, const double& x);
+ private:
+  // Auxiliary methods:
+  double evaluateRPN(const String& rpn, const double& x);
 
-    TokenType tokenType(const String& token);
+  TokenType tokenType(const String& token);
 
-    bool isOperand(const String& token);
-    bool isBinaryOperator(const char b_op);
-    bool isUnaryOperator(const char u_op);
+  bool isOperand(const String& token);
+  bool isBinaryOperator(const char b_op);
+  bool isUnaryOperator(const char u_op);
 
-    double applyUnaryOperator(const char fn, double operand);
-    double applyBinaryOperator(const char op, double operand_1, double operand_2);
+  double applyUnaryOperator(const char fn, double operand);
+  double applyBinaryOperator(const char op, double operand_1, double operand_2);
 
-    double answer_;
+  double answer_;
 };
 
 }  // namespace s21
